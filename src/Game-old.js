@@ -112,7 +112,7 @@ function createPlayer(x, y, image, keys) {
     config.PLAYER_VELOCITY,
     config.PLAYER_DOUBLE_JUMP_VELOCITY
   );
-  player.body.setSize(player.width - 14, player.height - 11, 11, 6);
+  player.body.setSize(player.width - 14, player.height - 11, 30, 15);
 
   player.isDoubleJump = false;
   player.startX = player.x;

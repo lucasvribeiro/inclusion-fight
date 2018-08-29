@@ -1,22 +1,6 @@
-var game = new Phaser.Game(800, 480, Phaser.CANVAS, null, {
-    preload: preload,
-    create: create,
-    update: update,
-    render: render
-  });
+var game = new Phaser.Game(1200, 600, Phaser.CANVAS, null);
 
-  function preload(){
-
-  }
-
-  function create() {
-
-  }
-
-  function update() {
-
-  }
-
-  function render() {
-      
-  }
+game.state.add('char', charState)
+game.state.add('cenario', cenarioState)
+game.state.add('match', matchState)
+game.state.start('char')
